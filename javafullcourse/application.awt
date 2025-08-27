@@ -1,0 +1,14 @@
+import java.awt.*;
+import java.awt.event.*;
+Public class simple AWT {
+    public static void main (string[]args){
+        Frame frame = new frame("AWT Example");
+        Button button = new Button("click me");
+        button.setbound (20,45,50,80);
+        button.addActionListeners(e->system.out.println("button clickd"));
+        frame.add(button);
+        frame.setsize(250,300);
+        frame.setlayout(null);
+        frame.setvisible(true);
+    }
+}

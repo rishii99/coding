@@ -1,0 +1,34 @@
+import javax.swing.*;
+import java.awt.*;
+
+public class SmileyFace {
+    public static void main(String[] args) {
+        JFrame frame = new JFrame("Smiley Face");
+
+        // Custom JPanel for drawing
+        JPanel panel = new JPanel() {
+            @Override
+            protected void paintComponent(Graphics g) {
+                super.paintComponent(g); // Clear background
+
+                // Draw the face (big yellow circle)
+                g.setColor(Color.YELLOW);
+                g.fillOval(100, 100, 200, 200);
+
+                // Draw the eyes (black circles)
+                g.setColor(Color.BLACK);
+                g.fillOval(140, 150, 20, 20); // Left eye
+                g.fillOval(240, 150, 20, 20); // Right eye
+
+                // Draw the smile (red arc)
+                g.setColor(Color.RED);
+                g.drawArc(150, 190, 100, 50, 0, -180); // Smiling arc
+            }
+        };
+
+        frame.add(panel);
+        frame.setSize(400, 420);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setVisible(true);
+    }
+}
