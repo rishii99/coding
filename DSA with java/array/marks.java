@@ -7,6 +7,7 @@ public class marks {
             if(marks[i]<35)
           //  System.out.println(marks[i]+ " ");
           System.out.println(i+ " ");
+          //
         }
     }
 }
