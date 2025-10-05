@@ -21,4 +21,3 @@ public class Largest_array {
         System.out.println("largest value is:" +getLargest(numbers));
     }
 }
- 
