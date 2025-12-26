@@ -1,4 +1,4 @@
-package pattern.pattern;
+package pattern;
 
 public class Starplus {
     public static void main(String[] args) {

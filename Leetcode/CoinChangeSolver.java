@@ -1,4 +1,3 @@
-import java.util.*;
 public class CoinChangeSolver {
     public static int coinChange(int[] coins, int amount) {
         int[] memo = new int[amount + 1];

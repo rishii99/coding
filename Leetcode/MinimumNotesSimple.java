@@ -1,7 +1,6 @@
 import java.util.Scanner;
 public class MinimumNotesSimple {
     public static int minNotes(int[] a) {
-        int n = a.length;
         int max = 0;
         for (int v : a) max = Math.max(max, v);
         int ans = Integer.MAX_VALUE;

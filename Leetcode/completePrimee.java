@@ -1,12 +1,15 @@
 public class completePrimee {
 
-    public boolean completePrimee(int num) {
+    public boolean isCompletePrimee(int num) {
         String s = "" + num;
         for (int i = 1; i <= s.length(); i++) {
             if (!p(Integer.parseInt(s.substring(0, i)))) return false;
             if (!p(Integer.parseInt(s.substring(s.length() - i)))) return false;
         }
         return true;
+    }
+
+    public completePrimee(int num) {
     }
 
     boolean p(int x) {
@@ -18,7 +21,7 @@ public class completePrimee {
     }
 
     public static void main(String[] args) {
-        completePrimee obj = new completePrimee();
-        System.out.println(obj.completePrimee(233));  // Example test
+        completePrimee obj = new completePrimee(233);
+        System.out.println(obj.isCompletePrimee(233));  // Example test
     }
 }

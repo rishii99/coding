@@ -1,5 +1,5 @@
 // Source code is decompiled from a .class file using FernFlower decompiler (from Intellij IDEA).
-package pattern.pattern;
+package pattern;
 
 import java.util.Scanner;
 
